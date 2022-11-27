@@ -75,10 +75,55 @@
 .userShowInfoTitle {
   margin-left: 10px;
 }
+.userUpdateForm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.userUpdateItem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.userUpdateItem > label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.userUpdateInput {
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+}
 .userUpdateImg {
   height: 100px;
   width: 100px;
   border-radius: 10px;
   object-fit: cover;
   margin-right: 20px;
+}
+.userUpdateIcon {
+  cursor: pointer;
+}
+.userUpdateTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.userUpdateRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userUpdateUpload {
+  display: flex;
+  align-items: center;
+}
+.userUpdateButton {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: darkblue;
+  font-weight: bolder;
 }
