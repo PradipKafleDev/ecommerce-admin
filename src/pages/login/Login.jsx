@@ -10,19 +10,32 @@ const Login = () => {
     e.preventDefault();
     login(dispatch, { username, password });
   };
+
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
+      }}
+    >
       <input
+        style={{ padding: "10px", marginBottom: "20px" }}
         type="text"
         placeholder="username"
         onChange={e => setUsername(e.target.value)}
       />
       <input
+        style={{ padding: "10px", marginBottom: "20px" }}
         type="password"
         placeholder="passowrod"
         onChange={e => setPassword(e.target.value)}
       />
-      <button onClick={handleClick}>Login</button>
+      <button style={{ padding: "10px", width: "100px" }} onClick={handleClick}>
+        Login
+      </button>
     </div>
   );
 };
